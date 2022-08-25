@@ -18,7 +18,7 @@ public class ProductServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        this.productRepository = new ProductRepository();
+        /*this.productRepository = new ProductRepository();
         this.productRepository.insert(new Product("Apple", 50));
         this.productRepository.insert(new Product("Bread", 30));
         this.productRepository.insert(new Product("Milk", 80));
@@ -28,8 +28,11 @@ public class ProductServlet extends HttpServlet {
         this.productRepository.insert(new Product("Cookie", 100));
         this.productRepository.insert(new Product("Soap", 150));
         this.productRepository.insert(new Product("Salt", 90));
-        this.productRepository.insert(new Product("Pepper", 90));
+        this.productRepository.insert(new Product("Pepper", 90));*/
 
+        this.productRepository = (ProductRepository) getServletContext().getAttribute("productRepository");
+        //getAttribute - забираем атрибут
+        //любой сервлет, который захочет получить доступ к этому репозиторию, сможет вызвать этот метод
     }
 
     @Override
