@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--bean - это экземпляр джава класса, но этот класс контролируется string-->
+
+    <!--    <bean id="userRepository" class="ru.gredychian.persist.UserRepositoryImpl" />-->
+
+    <!--    <bean id="userService" class="ru.gredychian.UserService" >-->
+    <!--        <constructor-arg ref="userRepository" />--> <!--аргументы конструктора rkfccf ГыукЫукмшсу, которые сслыаются на bean-->
+    <!--    </bean>-->
+
+    <context:component-scan base-package="ru.gredychian" />
+
+</beans>
