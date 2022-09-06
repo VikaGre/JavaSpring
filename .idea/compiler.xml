@@ -8,12 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Lesson1-servlet-api" />
         <module name="lesson2-spring-basics" />
+        <module name="lesson3-spring-mvc" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Lesson1-servlet-api" options="" />
-    </option>
   </component>
 </project>
